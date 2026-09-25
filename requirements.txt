@@ -1,0 +1,77 @@
+# =========================
+# Core LLM / Embedding Providers
+# =========================
+openai
+mistralai
+
+# =========================
+# Orchestration Frameworks
+# =========================
+langchain
+langchain-community
+langchain-openai
+langchain-mistralai
+langchain-text-splitters
+llama-index
+
+# =========================
+# Vector Stores / Databases
+# =========================
+chromadb
+faiss-cpu
+pinecone-client
+qdrant-client
+weaviate-client
+
+# =========================
+# Document Loading & Parsing
+# =========================
+pypdf
+pymupdf
+python-docx
+unstructured
+beautifulsoup4
+lxml
+markdown
+python-pptx
+openpyxl
+
+# =========================
+# Text Processing / Chunking
+# =========================
+tiktoken
+nltk
+spacy
+
+# =========================
+# Embeddings / Reranking (local options)
+# =========================
+sentence-transformers
+transformers
+torch
+
+# =========================
+# API / Backend
+# =========================
+fastapi
+uvicorn
+pydantic
+python-dotenv
+python-multipart
+
+# =========================
+# Frontend / UI (optional)
+# =========================
+streamlit
+gradio
+
+# =========================
+# Utilities
+# =========================
+numpy
+pandas
+tqdm
+requests
+tenacity
+loguru
+
