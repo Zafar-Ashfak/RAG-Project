@@ -2,7 +2,7 @@ from langchain_community.document_loaders import TextLoader
 
 # Load the text file
 loader = TextLoader(
-    file_path="genai.txt",
+    file_path="../genai.txt",
     encoding="utf-8"
 )
 
