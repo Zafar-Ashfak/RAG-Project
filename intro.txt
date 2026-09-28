@@ -1,5 +1,19 @@
-Hello,
+Hi,
 
-I am Md Ashfak Alam. I am from Bihar but I live in Hyderabad.
+My name is Md Ashfak Alam. I am from Bihar, but I live in Hyderabad.
 
-I have 2 year of experience as an AI Engineer at Cynob IT Consultancy.
+I completed my MCA from Dr. A.P.J. Abdul Kalam University, Indore in 2024. Before that, I completed my graduation in Physics from Bhimrao Ambedkar Bihar University in 2019.
+
+If I talk about my professional experience, I have around two years of experience as a Generative AI Engineer at Cynob IT Consultancy.
+
+In my current role, my responsibilities include developing Generative AI applications using Python and LangChain. I work on building RAG pipelines, loading documents from different sources, splitting documents into smaller chunks, generating embeddings, and storing them in vector databases.
+
+I also work on integrating large language models, creating prompts, and retrieving relevant information from documents to generate accurate and context-aware responses. Apart from this, I focus on testing and debugging applications to improve their performance and reliability.
+
+I have also been continuously improving my knowledge of Generative AI, Large Language Models, prompt engineering, and Retrieval-Augmented Generation.
+
+My strengths are that I am a quick learner, a hardworking person, and always ready to learn new technologies. I enjoy solving problems and working with a team.
+
+My short-term goal is to become a skilled Generative AI Engineer and contribute to real-world projects. My long-term goal is to grow professionally and take on more responsibilities in the field of AI.
+
+That's all about me. Thank you for giving me this opportunity to introduce myself.

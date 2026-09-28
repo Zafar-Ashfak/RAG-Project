@@ -18,7 +18,7 @@ splitter = CharacterTextSplitter(
 
 chunks = splitter.split_documents(docs)
 
-# Iterate through the chunks and display their content
+# Iterate through the chunks and display each chunk's content
 for chunk in chunks:
     print(chunk.page_content)
     print("\n\n")
