@@ -2,3 +2,8 @@
 .env
 .deepeval
 .idea/
+.python-version
+pyproject.toml
+uv.lock
+src
+chroma-db
