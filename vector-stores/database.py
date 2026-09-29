@@ -1,6 +1,6 @@
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 docs = [
     Document(
@@ -20,12 +20,25 @@ docs = [
 ]
 
 embedding_model = HuggingFaceEmbeddings(
-    model="sentence-transformers/all-MiniLM-L6-v2"
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-vectorstores = Chroma(
-    documents = docs,
-    embeddings=embedding_model,
+vectorstores = Chroma.from_documents(
+    embedding=embedding_model,
+    documents=docs,
     persist_directory="chroma-db"
 )
+
+results = vectorstores.similarity_search("Which language is used in Artificial Intelligence?", k=2)
+
+for result in results:
+    print(result.page_content)
+    print(result.metadata)
+
+retriever = vectorstores.as_retriever()
+
+retrieved_docs = retriever.invoke("Explain Deep Learning.")
+
+for doc in retrieved_docs:
+    print(doc.page_content)
 
