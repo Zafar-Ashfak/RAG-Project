@@ -74,4 +74,4 @@ tqdm
 requests
 tenacity
 loguru
-
+arxiv
