@@ -26,7 +26,7 @@ embedding_model = HuggingFaceEmbeddings(
 vectorstores = Chroma.from_documents(
     embedding=embedding_model,
     documents=docs,
-    persist_directory="chroma-db"
+    persist_directory="../chroma-db"
 )
 
 results = vectorstores.similarity_search("Which language is used in Artificial Intelligence?", k=2)
@@ -37,8 +37,8 @@ for result in results:
 
 retriever = vectorstores.as_retriever()
 
-retrieved_docs = retriever.invoke("Explain Deep Learning.")
+similar_chunks = retriever.invoke("Explain Deep Learning.")
 
-for doc in retrieved_docs:
-    print(doc.page_content)
+for chunk in similar_chunks:
+    print(chunk.page_content)
 
