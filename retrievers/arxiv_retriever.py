@@ -5,8 +5,8 @@ from langchain_community.retrievers import ArxivRetriever
 arxiv.Client.query_url_format = "https://export.arxiv.org/api/query?{}"
 
 retriever = ArxivRetriever(
-    load_max_docs=2,                  # Retrieve a maximum of 2 papers
-    load_all_available_meta=True      # Include all available metadata
+    load_max_docs=2,
+    load_all_available_meta=True
 )
 
 # Search for research papers related to Large Language Models
