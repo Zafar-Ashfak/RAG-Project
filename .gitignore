@@ -7,3 +7,5 @@ pyproject.toml
 uv.lock
 src
 chroma-db
+retrievers/local-db
+retrievers/mqr_local-db
