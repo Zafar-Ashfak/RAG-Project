@@ -9,3 +9,4 @@ src
 chroma-db
 retrievers/local-db
 retrievers/mqr_local-db
+vector-stores/my_local-db
