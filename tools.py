@@ -3,9 +3,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-loader = PyPDFLoader(file_path="deeplearning.pdf")
+FILE_PATH = "deeplearning.pdf"
+
+# Step 1: Load documents from the source (PDF)
+loader = PyPDFLoader(file_path=FILE_PATH)
 docs = loader.load()
 
+# Step 2: Split documents into smaller chunks
 splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,
     chunk_overlap=200
@@ -13,6 +17,7 @@ splitter = RecursiveCharacterTextSplitter(
 
 chunks = splitter.split_documents(docs)
 
+# Creating a chat model
 def get_llm():
     llm = HuggingFaceEndpoint(
         repo_id="openai/gpt-oss-120b",
@@ -22,6 +27,7 @@ def get_llm():
 
     return ChatHuggingFace(llm=llm)
 
+# Creating prompt template
 prompt_template = ChatPromptTemplate.from_messages([
     (
         "system",
