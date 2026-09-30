@@ -26,7 +26,7 @@ embedding_model = HuggingFaceEmbeddings(
 vectorstores = Chroma.from_documents(
     embedding=embedding_model,
     documents=docs,
-    persist_directory="../chroma-db"
+    persist_directory="my_local-db"
 )
 
 results = vectorstores.similarity_search("Which language is used in Artificial Intelligence?", k=2)
